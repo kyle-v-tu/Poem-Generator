@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css"/>
+  <title>Poem Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=SUSE:wght@100..800&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <div class="panel">
+      <h1>Please insert a line of text, then <span>press enter</span> to generate a poem</h1>
+      <input id="first-input" type="text" placeholder="The quick brown fox jumps over the lazy dog" autocomplete="off">
+      <hr>
+      <h1><span>Next</span>, input an emotion in the field below and <span>press the button</span> below to change your poem to fit that tone</h1>
+      <input id="second-input" type="text" placeholder="Happy" autocomplete="off">
+      <hr>
+      <div class="response"></div>
+      <button id="button">Create emotion</button>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
